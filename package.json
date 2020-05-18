@@ -1,0 +1,15 @@
+{
+  "name": "oanda_datafeed",
+  "version": "1.0.0",
+  "description": "UDF datafeed for Trading View charting_library",
+  "main": "oanda.js",
+  "dependencies": {
+    "bottleneck": "^2.19.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Phil Mannle",
+  "license": "ISC"
+}
