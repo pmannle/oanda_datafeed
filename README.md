@@ -5,19 +5,15 @@ This repository contains a sample of UDF-compatible data server.
 
 Register at Oanda.com to get a free API key.
 
-Use NodeJS to launch `oanda.js` with your Oanda API key set in the environment variable:
+First, request access to the Trading View Charting Library repo on github.
 
-```bash
-APIKEY_LIVE=YOUR_KEY nodejs oanda.js
-```
-Change the source URL in `index.html` file of the Charting Library:
+Then download it and change the source URL in `index.html` file of the Charting Library:
 
 ```javascript
 datafeed: new Datafeeds.UDFCompatibleDatafeed("http://localhost:8888")
 ```
-Request access to the Trading View Charting Library repo on github, then download it and boot up the server:
 
-To boot up the chart server:
+and boot up the server and boot up the chart server:
 
 ```bash
 cd charting_library
@@ -31,6 +27,5 @@ Then, clone this repo in a directory next to the charting_library, install depen
 ```bash
 cd oanda_datafeed
 npm install
-node oanda.js
+APIKEY_LIVE=YOUR_KEY node oanda.js
 ```
-
